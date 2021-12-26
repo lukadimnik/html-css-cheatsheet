@@ -1,0 +1,35 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(150, 250, 250);
+}
+
+table {
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+th {
+  background-color: rgb(242, 250, 250);
+  padding: 4px;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.code-snippet {
+  font-family: monospace;
+  background-color: rgb(241, 245, 245);
+  border-radius: 5px;
+  padding: 2px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>CSS selectors and specificity</h1>
+    <table>
+      <tr>
+        <th>Selector</th>
+        <th>Specificity rank</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td>1</td>
+        <td><span class="code-snippet">#copyright {}</span></td>
+      </tr>
+      <tr>
+        <td>class</td>
+        <td>2</td>
+        <td><span class="code-snippet">.button-confirm {}</span></td>
+      </tr>
+      <tr>
+        <td>element</td>
+        <td>3</td>
+        <td><span class="code-snippet">p {}</span></td>
+      </tr>
+      <tr>
+        <td>attribute</td>
+        <td>/</td>
+        <td><span class="code-snippet">a[href] {}</span></td>
+      </tr>
+      <tr>
+        <td>children selector</td>
+        <td>/</td>
+        <td><span class="code-snippet">p a {}</span></td>
+      </tr>
+      <tr>
+        <td>multiple element selector</td>
+        <td>/</td>
+        <td><span class="code-snippet">p, a {}</span></td>
+      </tr>
+      <tr>
+        <td>chaining selector</td>
+        <td>/</td>
+        <td><span class="code-snippet">button.confirm.light-green {}</span></td>
+      </tr>
+    </table>
+    <div class="container">
+      <ul>
+        <li>
+          <span class="code-snippet">!important</span> attribute overrides all
+          other styles so use it with caution
+        </li>
+        <li>
+          the more classes or id's in a given selector the more specific it
+          becomes
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
